@@ -1,13 +1,12 @@
 <template>
-  <vs-topbar style="justify-content: flex-end;">
-    <div class="content">
-      <ul class="items-right">
-        <li><a href="#">MENU</a></li>
-        <li><a href="#">MENU</a></li>
-        <li><a href="#">MENU</a></li>
-        <li><a href="#">MENU</a></li>
-      </ul>
-    </div>
+  <vs-topbar class="nav" style="justify-content: flex-end;">
+    <span class="brand left">Brand</span>
+    <ul class="items">
+      <li class="menu-item"><a href="#">MENU</a></li>
+      <li class="menu-item"><a href="#">MENU</a></li>
+      <li class="menu-item"><a href="#">MENU</a></li>
+      <li class="menu-item"><a href="#">MENU</a></li>
+    </ul>
   </vs-topbar>
 </template>
 
@@ -19,17 +18,25 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .content {
+  .nav {
     padding-right: 15px;
     padding-top: 20px;
   }
-  li {
+  .brand {
+    margin-left: 30px;
+    margin-right: auto;
+  }
+  .menu-item {
     display: inline-block;
     margin-right: 15px;
-    margin-left: 15px
-  }
-  li a {
-    color: #2e2e2e;
-    font-weight: 500;
+    margin-left: 15px;
+
+    a {
+      color: #2e2e2e;
+      font-weight: 500;
+    }
+    :hover {
+      color: #308f30;
+    }
   }
 </style>
